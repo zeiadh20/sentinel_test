@@ -1,7 +1,6 @@
-# provider "aws" {
-#   region  = "us-east-1"
-#   profile = "terraform_dev"
-# }
+ provider "aws" {
+   region  = "us-east-1"
+ }
 
 
 resource "aws_instance" "test" {
@@ -83,10 +82,7 @@ resource "aws_instance" "test" {
 #     command = "chmod 600 id_rsa.pem"
 #   }
 # }
-provider "aws" {
-  region  = "us-east-1"
- # profile = "terraform_dev"
-}
+
 
 
 # resource "aws_s3_bucket" "mys3" {
